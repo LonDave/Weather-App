@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Weather App</title>
 </head>
+
 <body>
-    <header>
-        <h1 id="title">Weather app</h1>
-        <p>Il tuo servizio meteoroligico gratuito</p>
+    <!-- Sezione HEADER DELLA PAGINA -->
+    <header id="page-header">
+        <section class="title-section">
+            <h1 id="title">Weather app</h1>
+            <section>
+                <!-- Pulsante menuBurger -->
+                <button class="menu">≡</button>
+                <div class="nav-links">
+                    <!-- Campo di testo dove l'utente inserisce la sua chiave API -->
+                    <input type="text" placeholder="inserisci la tua API" id="utente-api">
+                    <button id="btn-Api-Utente">Invio</button>
+                </div>
+            </section>
+        </section>
+        <h3 id="subtitle-header">Il tuo servizio meteoroligico gratuito</h3>
     </header>
+
     <main>
-        <section>
-            <input type="text" placeholder="Scrivi una città">
-            <button>Premi per avviare la ricerca</button>
+        <section class="container">
+            <section class="box">
+                <input type="text" placeholder="Scrivi una città">
+                <button class="btn-ricerca">Premi per avviare la ricerca</button>
+            </section>
+
+            <section id="output-api">
+                <p id="citta">Città scelta</p>
+                <p id="tempepratura">Temperatura riportata</p>
+                <p id="descrizione">Oggi è una giornata...</p>
+            </section>
         </section>
-        <section>
-            <p id="citta"></p>
-            <p id="tempepratura"></p>
-            <p id="descrizione"></p>
-        </section>
+
     </main>
     <footer></footer>
 </body>
+
 </html>
