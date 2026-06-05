@@ -96,6 +96,7 @@ body {
 
 }
 
+/* Gestione responsive del sito */
 @media (max-width: 768px) {
     .menu {
         height: 2rem;
