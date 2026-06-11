@@ -23,13 +23,18 @@ bottone.addEventListener('click', ()=>{
         const lat = datiGeografici.results[0].latitude;
         const lon = datiGeografici.results[0].longitude;
         const nomeCorretto = datiGeografici.results[0].name;
+        
 
         // 2. Uso delle coordinate per chiedere il meteo reale
         return fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`).then(response => response.json()).then(datiMeteo =>{
 
             // 3. Aggiornamento HTML
             document.querySelector('#citta').innerText = nomeCorretto;
-            document.querySelector('#tempepratura').innerText = `${datiMeteo.current_weather.temperature}°C`;
+            document.querySelector('#temperatura').innerText = `${datiMeteo.current_weather.temperature}°C`;
+
+            // Aggiunta la possibilità di sapere la velocità del vento presente
+            document.querySelector('#speed-vento').innerText = `${datiMeteo.current_weather.windspeed}km/h`;
+            
 
             console.log("Dati completi del meteo: ", datiMeteo.current_weather);
         });

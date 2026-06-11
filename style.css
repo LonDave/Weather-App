@@ -34,6 +34,7 @@ body {
 .input-citta {
     border: none;
     margin-top: 1rem;
+    height: 20px;
 }
 
 .btn-ricerca {
@@ -43,7 +44,7 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.1s ease;
-    ;
+    height: 30px;
 }
 
 .btn-ricerca:hover {
