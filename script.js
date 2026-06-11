@@ -1,14 +1,7 @@
-const menuButton = document.querySelector('.menu');
+
 const navLinks = document.querySelector('.nav-links');
 const bottone = document.querySelector('.btn-ricerca');
 const input = document.querySelector('.input-citta');
-
-
-// Menù burger
-// menuButton.addEventListener('click', () =>{
-//     navLinks.classList.toggle('open');
-// });
-
 
 // Bottone 
 bottone.addEventListener('click', ()=>{

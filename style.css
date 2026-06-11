@@ -31,80 +31,78 @@ body {
     align-items: center;
 }
 
-/* .menu {
-    height: 2rem;
-    width: 2rem;
-    margin: 1rem 5rem 0rem 0rem;
-    background: none;
-    border: 1px solid whitesmoke;
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-.nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    min-height: calc(100vh - 5rem);
-    background: rgba(255, 255, 255, 0.98);
-    padding: 2rem 1.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    z-index: 10;
-}
-
-.nav-links.open {
-    display: block;
-}
-
-.nav-links input,
-.nav-links button {
-    display: block;
-    width: 100%;
-    margin: 0.75rem 0;
-    font-size: 1rem;
-    padding: 0.75rem 0.9rem;
-}
-
-.nav-links input {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-.nav-links button {
+.input-citta {
     border: none;
-    background: rgb(95, 177, 248);
-    color: white;
-    border-radius: 8px;
-} */
+    margin-top: 1rem;
+}
 
 .btn-ricerca {
-    border: none;
-    background: rgb(95, 177, 248);
+    background: rgb(70, 161, 241);
     color: white;
+    border: none;
     border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    ;
+}
+
+.btn-ricerca:hover {
+    background-color: #17bbec;
+}
+
+#bottoneCerca:active {
+    box-shadow: 0 0px #17bbec;
 }
 
 .container {
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(95, 177, 248);
     display: grid;
     justify-content: center;
     grid-auto-flow: row;
     gap: 40px;
-
+    border-radius: 3px;
+    width: 50%;
+    padding: 2rem;
 }
 
-/* Gestione responsive del sito */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#output-api{
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/* Gestione responsive del sito per mobile */
 @media (max-width: 768px) {
-    .menu {
-        height: 2rem;
-        width: 2rem;
-        margin: 1rem 2rem 0rem 0rem;
-        background: none;
-        border: 1px solid whitesmoke;
-        color: whitesmoke;
-        cursor: pointer;
+
+    .container {
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(95, 177, 248);
+        display: grid;
+        justify-content: center;
+        grid-auto-flow: row;
+        gap: 40px;
+        border-radius: 3px;
+        width: fit-content;
+        padding: 2rem;
     }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
 }
