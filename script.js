@@ -5,9 +5,9 @@ const input = document.querySelector('.input-citta');
 
 
 // Menù burger
-menuButton.addEventListener('click', () =>{
-    navLinks.classList.toggle('open');
-});
+// menuButton.addEventListener('click', () =>{
+//     navLinks.classList.toggle('open');
+// });
 
 
 // Bottone 

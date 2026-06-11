@@ -31,7 +31,7 @@ body {
     align-items: center;
 }
 
-.menu {
+/* .menu {
     height: 2rem;
     width: 2rem;
     margin: 1rem 5rem 0rem 0rem;
@@ -78,7 +78,7 @@ body {
     background: rgb(95, 177, 248);
     color: white;
     border-radius: 8px;
-}
+} */
 
 .btn-ricerca {
     border: none;
