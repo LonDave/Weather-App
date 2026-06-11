@@ -1,4 +1,4 @@
-
+// Richiamo
 const navLinks = document.querySelector('.nav-links');
 const bottone = document.querySelector('.btn-ricerca');
 const input = document.querySelector('.input-citta');
@@ -6,7 +6,7 @@ const input = document.querySelector('.input-citta');
 // Bottone 
 bottone.addEventListener('click', ()=>{
 
-    // Prende il valore e lo assegna ad una variabile
+    // Prende il valore di input e lo assegna ad una variabile
     const cittaScritta = input.value; 
 
     // 1. Coordinate per la città inserita richieste al server. fetch richiede i dati grezzi, then li trasforma in un 
